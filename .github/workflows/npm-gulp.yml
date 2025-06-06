@@ -17,12 +17,15 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Install dependencies
       run: |
         npm install
-        gulp
+
+    - name: Build
+      run: |
+        npm run build
