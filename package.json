@@ -1,0 +1,24 @@
+{
+  "name": "gestao-colaborador",
+  "version": "1.0.0",
+  "description": "Este projeto consiste em um **Sistema de Gestão de Usuários**, onde os usuários podem realizar ações básicas como login e cadastro. O sistema foi desenvolvido com **HTML**, **CSS** e **JavaScript** para fornecer uma interface simples e funcional, com o objetivo de demonstrar práticas de gerenciamento de configuração de software (GCS) e Git Flow.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabioramos-02/gestao-colaborador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabioramos-02/gestao-colaborador/issues"
+  },
+  "homepage": "https://github.com/fabioramos-02/gestao-colaborador#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1"
+  }
+}
