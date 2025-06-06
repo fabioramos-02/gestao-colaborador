@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Sistema de Gestão de Usuários</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestão de Colaboradores</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Sistema de Gestão de Usuários</h1>
-        <button id="btnSair">Sair</button>
-    </header>
 
-    <main>
-        <section id="userList">
-            <h2>Colaboradores Cadastrados</h2>
-            <button id="btnAdicionarUsuario">Adicionar Novo Colaborador</button>
-            <!-- Tabela para exibição dos colaboradores -->
-            <table id="collaboratorTable">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Contato</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody id="collaboratorList"></tbody>
-            </table>
-        </section>
-    </main>
+<header>
+    <h1>Gestão de Colaboradores</h1>
+    <button id="btnSair">Sair</button>
+</header>
 
-    <!-- Modal para Adicionar/Editar Usuário -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h3 id="modalTitle">Cadastrar Novo Colaborador</h3>
-            <form id="userForm">
-                <label for="username">Nome:</label>
-                <input type="text" id="username" name="username" required>
+<main>
+    <section>
+        <button id="btnAdicionarUsuario">Adicionar Novo Colaborador</button>
+    </section>
 
-                <label for="contact">Contato:</label>
-                <input type="text" id="contact" name="contact" required>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Detalhes</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="collaboratorList">
+                <!-- Lista de colaboradores preenchida por JS -->
+            </tbody>
+        </table>
+    </section>
+</main>
 
-                <button type="submit" id="submitBtn">Cadastrar</button>
-            </form>
-        </div>
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalTitle">Cadastrar Colaborador</h2>
+        <form id="userForm">
+            <label for="username">Nome:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="contact">Contato:</label>
+            <input type="text" id="contact" name="contact" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="role">Cargo:</label>
+            <input type="text" id="role" name="role" required />
+
+            <button type="submit" id="submitBtn">Cadastrar</button>
+        </form>
     </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Sistema de Gestão de Usuários</p>
-    </footer>
+<script src="./assets/js/gerenciarColaborador.js"></script>
 
-    <script src="./assets/js/gerenciarColaborador.js"></script>
 </body>
 </html>
