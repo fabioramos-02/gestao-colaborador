@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Gestão de Usuários</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Login - Sistema de Gestão de Usuários</h1>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Entre com seu Usuário</h2>
+            <form id="loginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <a href="register.html">Cadastre-se aqui</a></p>
+        </section>
+    </main>
+
+    <!-- Modal de Feedback -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestão de Usuários</p>
+    </footer>
+
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Estilo básico para o sistema de gestão de usuários */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos específicos para o botão "Adicionar Novo Colaborador" */
+#btnAdicionarUsuario {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#btnAdicionarUsuario:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a tabela de colaboradores */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td button {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botão Editar */
+td button:first-child {
+    background-color: #ffa600; /* Amarelo Bootstrap para editar */
+    color: white;
+}
+
+td button:first-child:hover {
+    background-color: #45a049;
+}
+
+/* Botão Excluir */
+td button:last-child {
+    background-color: #f44336; /* Vermelho para excluir */
+    color: white;
+}
+
+td button:last-child:hover {
+    background-color: #d32f2f;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
